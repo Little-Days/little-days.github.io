@@ -3,23 +3,31 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Privacy Policy · Little Days</title>
-  <meta name="description" content="How Little Days handles your family’s information: it stays on your device.">
-  <meta property="og:title" content="Privacy Policy · Little Days"><meta property="og:description" content="How Little Days handles your family’s information: it stays on your device."><meta property="og:image" content="https://little-days.github.io/images/today.jpg">
+  <meta name="description" content="How Little Days handles your family’s information: it stays on your devices and in your own iCloud, where we can’t see it.">
+  <meta property="og:title" content="Privacy Policy · Little Days"><meta property="og:description" content="How Little Days handles your family’s information: it stays on your devices and in your own iCloud, where we can’t see it."><meta property="og:image" content="https://little-days.github.io/images/today.jpg">
   <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="wrap site-header"><a class="brand" href="./"><img src="apple-touch-icon.png" alt="">Little Days</a><nav><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a></nav></header>
   <main class="wrap narrow doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective October 11, 2026</p>
-    <p class="lead">Little Days is a baby journal that keeps your family’s records on your device and, if you choose, in your own iCloud account. We do not collect, sell or share your personal information.</p>
+    <p class="meta">Effective October 12, 2026</p>
+    <p class="lead">Little Days is a baby journal that keeps your family’s records on your iPhone and, if you choose, in your own iCloud account. We can’t see your journal, and we don’t sell or share your information.</p>
+    <h2>What we can and can’t see</h2>
+    <ul>
+      <li><strong>Your journal is private to you and the people you invite.</strong> Profiles, entries, photos, notes and caregiver names are stored on your iPhone and, for journals you keep in iCloud, with Apple’s CloudKit in your iCloud account (or, for a journal shared with you, in the account of the person who shared it). As the developer, we have no access to anyone’s iCloud data: we can’t view, search, copy or delete it, and no journal content is ever sent to a server we run.</li>
+      <li><strong>Encryption.</strong> Entry and profile text is stored in CloudKit’s end-to-end encrypted fields, which only your devices and the people you share the journal with can decrypt. Photos are stored as encrypted iCloud files, and are end-to-end encrypted too if you turn on Advanced Data Protection for iCloud.</li>
+      <li><strong>What reaches us.</strong> Only the technical details the sleep-timer relay needs (see <em>Sharing with caregivers</em>). If you turn on <em>Share With App Developers</em> in iOS Settings → Privacy &amp; Security → Analytics &amp; Improvements, Apple also passes on crash reports and usage statistics, which don’t include journal content. Apple gives us aggregate App Store figures such as download counts.</li>
+    </ul>
     <h2>Information you enter</h2>
-    <p>You may record your baby’s name, birthday and photo; sleep, feeding, diaper, routine, growth, health and vaccine entries; notes and photos attached to entries; caregiver names; and personal pregnancy notes. In the iPhone app this information is stored in the app’s private storage on your device and, for journals you keep in iCloud, in your iCloud account using Apple’s CloudKit. Entry and profile text is stored in CloudKit’s end-to-end encrypted fields, and photos are encrypted by Apple in iCloud; we have no access to any of it. In the web version it is stored in your browser’s local storage. It is not sent to us.</p>
+    <p>You may record your baby’s name, birthday and photo; sleep, feeding, diaper, routine, growth, health and vaccine entries; notes and photos attached to entries; caregiver names; and personal pregnancy notes. In the iPhone app this information is stored in the app’s private storage on your device and, for journals you keep in iCloud, in iCloud as described above. In the web version it is stored in your browser’s local storage. It is not sent to us.</p>
     <h2>No analytics, advertising or tracking</h2>
     <p>Little Days contains no advertising, analytics, tracking or third-party software development kits that collect data. We do not build profiles and we do not track you across apps or websites. The app connects only to Apple’s iCloud, for journals you keep there, and to the notification relay described under <em>Sharing with caregivers</em>.</p>
     <h2>Permissions</h2>
     <ul>
       <li><strong>Camera and photos</strong> are used only when you choose to attach a photo. The photo is resized and saved inside your journal on your device.</li>
+      <li><strong>Contacts</strong> are never read. <em>Choose from Contacts</em> opens Apple’s contact picker, and the app receives only the phone number or email address you pick.</li>
+      <li><strong>Messages</strong> opens with an invitation that you edit and send yourself; we never see your messages.</li>
       <li><strong>Notifications</strong> are scheduled locally on your device for optional sleep reminders.</li>
       <li><strong>Live Activities</strong> show a running sleep timer on your Lock Screen and in the Dynamic Island. In a shared journal, starting or ending a sleep also starts or ends it on the other caregivers’ phones through Apple’s push notification service.</li>
     </ul>
@@ -30,8 +38,9 @@
     <h2>Keeping and deleting your information</h2>
     <p>Your journal stays on your device until you erase it. Use <em>Settings → Start over → Erase journal</em> in the app, or delete the app to remove all of its data from your device. A journal kept in iCloud stays in your iCloud account until you delete it with <em>Family → Sharing → Delete from iCloud</em>, which also removes it for the people you shared it with; a caregiver can remove a journal shared with them with <em>Leave this journal</em>. You can also manage the app’s iCloud data in the iOS Settings app.</p>
     <h2>Sharing with caregivers</h2>
-    <p>You can invite other caregivers to a journal kept in iCloud. Invitations are created and managed with Apple’s iCloud sharing: you choose who to invite and whether they can make changes or only view, and you can remove people or stop sharing at any time. People you invite can see that journal’s profile, entries, photos and caregiver names. Your pregnancy notes, app settings and the name you log as on each phone stay on that phone. There are no Little Days accounts.</p>
-    <p>To start, update and end the sleep timer on the other caregivers’ phones, the app uses a small relay we run on Cloudflare. It receives a random identifier for the journal and for each phone, Apple push notification tokens, and a sleep’s start time. It never receives names, entries or photos. It keeps the push tokens only while a phone remains part of the journal, and keeps no other records. Apple delivers the notifications, and Apple and Cloudflare process network information such as IP addresses to deliver requests.</p>
+    <p>You can invite other caregivers to a journal kept in iCloud. When you invite someone, the phone number or email address you enter is sent to Apple to find their Apple Account and is saved in the journal’s iCloud sharing settings. The invitation is sent from your iPhone with Messages, and if you don’t send it, it is withdrawn. The link works only for the people you invite. You choose whether each person can make changes or only view, and you can remove people or stop sharing at any time.</p>
+    <p>People in a shared journal can see its profile, entries, photos and caregiver names, and Apple’s sharing settings show who else it is shared with. Your pregnancy notes, app settings and the name you log as on each phone stay on that phone. There are no Little Days accounts.</p>
+    <p>To start, update and end the sleep timer on the other caregivers’ phones, the app uses a small relay we run on Cloudflare. For each shared journal it stores a random identifier and a key that the journal’s phones use to sign requests, and for each phone a random identifier and Apple push tokens. A sleep’s start time passes through to Apple’s push service and is not stored. The relay never receives names, entries or photos. A phone’s push tokens are kept only while it remains part of the journal (timer tokens for at most two days) and are removed when Apple reports them invalid; everything about a journal is removed when its last phone leaves; and the short-lived records used to limit request rates and reject replayed requests expire within an hour. The relay doesn’t log requests. Apple delivers the notifications, and Apple and Cloudflare process network information such as IP addresses to deliver requests.</p>
     <h2>This website</h2>
     <p>This site is hosted by GitHub Pages and sets no cookies. GitHub may log visitors’ IP addresses for security, as described in GitHub’s privacy statement.</p>
     <h2>If you email us</h2>
