@@ -53,7 +53,7 @@ img { max-width: 100%; }
 .pill { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: 15px; font-weight: 600; }
 .pill svg { width: 18px; height: 18px; }
 .shots { display: flex; justify-content: center; gap: 16px; }
-.shots img { width: min(31%, 230px); border-radius: 30px; box-shadow: var(--shadow); border: 1px solid var(--line); }
+.shots img { width: min(31%, 230px); height: auto; border-radius: 30px; box-shadow: var(--shadow); border: 1px solid var(--line); }
 .shots img:nth-child(2) { transform: translateY(-22px); }
 
 .features { display: grid; gap: 14px; padding-bottom: 56px; }
